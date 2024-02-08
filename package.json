@@ -2,7 +2,7 @@
   "name": "the-software-engineer-site",
   "version": "0.0.1",
   "scripts": {
-    "dev": "NODE_ENV=development vite dev",
+    "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./jsconfig.json",
