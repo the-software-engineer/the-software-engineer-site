@@ -10,13 +10,13 @@ Quickstart project to develop and deploy a static Svelte page to GitHub pages.
 
 ## Features
 
-* Static page builds
-* GitHub pages support
-* Playwright for e2e testing
-* Tailwind for styling
-* Headless UI for basic UI components
-* PostCSS support
-* Typed Javascript
+- Static page builds
+- GitHub pages support
+- Playwright for e2e testing
+- Tailwind for styling
+- Headless UI for basic UI components
+- PostCSS support
+- Typed Javascript
 
 ## How do I get set up?
 
@@ -38,7 +38,7 @@ source ~/.bashrc
 
 ### Install Node
 
-You should now be able to list all available Node versions like this (``--lts`` for versions with long term support):
+You should now be able to list all available Node versions like this (`--lts` for versions with long term support):
 
 ```shell
 nvm list-remote --lts
