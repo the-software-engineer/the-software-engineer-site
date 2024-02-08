@@ -3,8 +3,8 @@
 </script>
 
 <SvelteSeo
-  title="GitHub pages with Svelte"
-  description="Quickstart project to develop and deploy a static Svelte page to GitHub pages."
+  title="The Software Engineer Ltd."
+  description="Contract software engineer in web and mobile development. Hire me for your next idea."
 />
 
 <main class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 mt-10">
