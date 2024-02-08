@@ -6,28 +6,42 @@ permissions:
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
-  deploy:
+  main:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Install, Test and Build
+      # Building
+      - name: Install and Build
         run: |
           npm install
           npm run lint
           npm run build
-          npx playwright install --with-deps
-          npm run test
           touch build/.nojekyll
 
+      # Testing
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+      - name: Run Playwright tests
+        run: npx playwright test
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
+
+      # Deploying
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
+        if: github.ref == 'refs/heads/main'
         with:
           branch: gh-pages
           folder: build
