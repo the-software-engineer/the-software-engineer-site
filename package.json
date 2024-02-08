@@ -1,5 +1,5 @@
 {
-  "name": "svelte-gh-pages-quickstart",
+  "name": "the-software-engineer-site",
   "version": "0.0.1",
   "scripts": {
     "dev": "NODE_ENV=development vite dev",
