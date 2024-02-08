@@ -7,7 +7,7 @@ const dev = process.env.NODE_ENV === 'development';
 const config = {
   kit: {
     paths: {
-      base: dev ? '' : '/svelte-gh-pages-quickstart',
+      base: dev ? '' : '/the-software-engineer-site',
     },
     adapter: adapter({
       pages: 'build',

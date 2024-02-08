@@ -15,10 +15,4 @@
     Quickstart project to develop and deploy a static Svelte page to GitHub
     pages.
   </p>
-  <p>
-    Read the <a
-      href="https://github.com/Spenhouet/svelte-gh-pages-quickstart#readme"
-      class="text-blue-700 hover:underline">README</a
-    > to get started.
-  </p>
 </main>
